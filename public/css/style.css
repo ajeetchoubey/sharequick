@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: #1f1f1f;
+    color: #fff;
+  }
+  
+  body {
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .container {
+    border: 2px solid #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 100px;
+    padding: 20px;
+    width: 90%; /* Changed to percentage for responsiveness */
+    max-width: 400px; /* Set a max width */
+  }
+  
+  .container input {
+    margin-top: 10px;
+  }
+  
+  .container button {
+    width: 150px;
+    height: 50px;
+    border: 2px solid #fff;
+    border-radius: 50px;
+    padding: 5px 20px;
+    cursor: pointer;
+    font-size: large;
+  }
+  
+  .container button:hover {
+    background-color: #fff;
+    color: #1f1f1f;
+  }
+  
+  .files {
+    margin-top: 80px;
+  }
+  
+  #fileList {
+    color: #fff;
+  }
+  
+  #fileList li {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-bottom: 5px;
+  }
+  
+  #fileList button {
+    margin-left: 10px;
+  }
+  
+  .download-button {
+    width: 150px;
+    height: 50px;
+    border: 2px solid #fff;
+    border-radius: 50px;
+    padding: 5px 20px;
+    cursor: pointer;
+  }
+  
+  .download-button:hover {
+    background-color: #fff;
+    color: #1f1f1f;
+  }
+  
+  .files {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .files span {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+      .container {
+          width: calc(100% - 40px); /* Adjust width for smaller screens */
+          margin-top: 50px; /* Reduce margin on smaller screens */
+      }
+  
+      .container button,
+      .download-button {
+          width: auto; /* Allow buttons to resize */
+          font-size: medium; /* Adjust font size */
+      }
+  
+      .files span {
+          gap: 20px; /* Reduce gap for smaller screens */
+      }
+  }
+  
+  @media (max-width: 480px) {
+      body {
+          padding-left:10px; 
+          padding-right :10px; /* Add padding for very small screens */
+      }
+  
+      .container {
+          padding:10px; /* Adjust padding for smaller devices */
+      }
+  }
+  
